@@ -33,6 +33,6 @@ def dirbrute(url, wordlist):
             print("<!> Ocorreu o um erro >>>", erro)
 
             
-for i in range(40):
+for i in range(200):
             threading.Thread(target=dirbrute(url, wordlist)).start()
   
