@@ -29,10 +29,11 @@ def dirbrute(url, wordlist):
                 if (status != 404):
                     print (dirb, ">>>", status)
   
-      #for i in range(40):
-        #threading.Thread(target=dirbrute()).start()
+    
         except Exception as erro:
             print("<!> Ocorreu o um erro >>>", erro)
 
-  
+       
+for i in range(100):
+            threading.Thread(target=dirbrute(url, wordlist)).start()
 dirbrute(url, wordlist)
